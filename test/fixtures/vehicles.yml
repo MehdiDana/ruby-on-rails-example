@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  type: MyString
+  volume: 1.5
+  weight_capacity: 1.5
+
+two:
+  type: MyString
+  volume: 1.5
+  weight_capacity: 1.5

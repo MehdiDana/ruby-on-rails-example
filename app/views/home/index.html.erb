@@ -1,0 +1,47 @@
+<h1 class="head1">Welcome to Harpers X</h1>
+<p>This table is summary listing of all database.</p>
+<hr />
+<table>
+  <tr>
+    <th>Customer Name</th>
+	<th>Customer telephone</th>
+    <th>Contract Price </th>
+    <th>Contract State</th>
+    <th>Contract Start at</th>
+    <th>shipment Origin</th>
+    <th>shipment Destination</th>
+    <th>shipment Slot start at</th>
+    <th>shipment Slot end at</th>
+    <th>Driver Name</th>
+    <th>Vehicle Type</th>
+<!--    
+	<th>shipment Description</th>
+-->
+    <th>License Type</th>
+   
+  </tr>
+
+<% @shipments.each do |shipment| %>
+  <tr>
+    <td><%= shipment.contract.customer.name %></td>
+    <td><%= shipment.contract.customer.telephone %></td>
+    <td><%= shipment.contract.price  %></td>
+    <td><%= shipment.contract.state %></td>
+    <td><%= shipment.contract.start_at %></td>
+    <td><%= shipment.origin %></td>
+    <td><%= shipment.destination %></td>
+    <td><%= shipment.slot_start_at %></td>
+    <td><%= shipment.slot_end_at %></td>
+    <td><%= shipment.driver.name %></td>
+    <td><%= shipment.vehicle.type %></td>
+<!--
+    <td><%= shipment.description %> </td>  COMMENTED for simplicity
+-->
+    <td><%= License.find_by_driver_id(shipment.driver.id).type  %></td>
+ 
+  </tr>
+<% end %>
+</table>
+
+
+

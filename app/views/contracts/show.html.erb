@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>State:</b>
+  <%= @contract.state %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%= @contract.price %>
+</p>
+
+<p>
+  <b>Start at:</b>
+  <%= @contract.start_at %>
+</p>
+
+<p>
+  <b>End at:</b>
+  <%= @contract.end_at %>
+</p>
+
+<p>
+  <b>Policy:</b>
+  <%= @contract.policy %>
+</p>
+
+<p>
+  <b>Reason:</b>
+  <%= @contract.reason %>
+</p>
+
+<p>
+  <b>Customer:</b>
+  <%= @contract.customer.id %>
+</p>
+
+
+<%= link_to 'Edit', edit_contract_path(@contract) %> |
+<%= link_to 'Back', contracts_path %>

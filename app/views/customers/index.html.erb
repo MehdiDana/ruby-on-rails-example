@@ -1,0 +1,35 @@
+<h1 class="head1">Listing customers</h1>
+<%= form_tag customers_path, :method => 'get' do %>
+  <p class="search_box">
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag "Search", :name => nil %> you can search for customer name
+  </p>
+<% end %>
+<hr />
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Address</th>
+    <th>Telephone</th>
+    <th>Email</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @customers.each do |customer| %>
+  <tr>
+    <td><%= customer.name %></td>
+    <td><%= customer.address %></td>
+    <td><%= customer.telephone %></td>
+    <td><%= customer.email %></td>
+    <td><%= link_to 'Show', customer %></td>
+    <td><%= link_to 'Edit', edit_customer_path(customer) %></td>
+    <td><%= link_to 'Destroy', customer, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Customer', new_customer_path %>

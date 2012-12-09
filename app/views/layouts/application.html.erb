@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Harpers X</title>
+  <%= stylesheet_link_tag :all %>
+  <%= javascript_include_tag :defaults %>
+  <%= csrf_meta_tag %>
+</head>
+<body>
+<span class="small_text">Relational Databases and Web Integration coursework - Milestone 2 of 2 - Student: M.Dana Computing science - April 2011
+ </span>
+<div class="menu">
+<hr >
+<%= link_to 'Homepage', root_path %> |
+<%= link_to 'Customer', customers_path %> | 
+<%= link_to 'Driver', drivers_path %> | 
+<%= link_to 'Vehicle', vehicles_path %> | 
+<%= link_to 'Contract', contracts_path %> | 
+<%= link_to 'Shipment', shipments_path %> | 
+<%= link_to 'License', licenses_path %> | 
+<hr />
+</div>
+<%= yield %>
+
+<hr >
+<span class="small_text">Copyright M.Dana</span>
+</body>
+</html>

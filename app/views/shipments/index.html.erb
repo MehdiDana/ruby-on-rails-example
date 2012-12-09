@@ -1,0 +1,48 @@
+<h1 class="head1">Listing shipments</h1>
+
+<table>
+  <tr>
+    <th>State</th>
+    <th>Origin</th>
+    <th>Destination</th>
+    <th>Description</th>
+    <th>Weight</th>
+    <th>Volume</th>
+    <th>Slot start at</th>
+    <th>Slot end at</th>
+    <th>Driver</th>
+    <th>Vehicle</th>
+    <th>Contract</th>
+    <th></th>
+<!--
+    <th></th>
+    <th></th>
+-->
+  </tr>
+
+<% @shipments.each do |shipment| %>
+  <tr>
+    <td><%= shipment.state %></td>
+    <td><%= shipment.origin %></td>
+    <td><%= shipment.destination %></td>
+    <td><%= shipment.description %></td>
+    <td><%= shipment.weight %></td>
+    <td><%= shipment.volume %></td>
+    <td><%= shipment.slot_start_at %></td>
+    <td><%= shipment.slot_end_at %></td>
+    <td><%= shipment.driver.name %></td>
+    <td><%= shipment.vehicle.type %></td>
+    <td><%= shipment.contract.id %></td>
+    <td><%= link_to 'Show', shipment %></td>
+<!--
+    <td><%= link_to 'Edit', edit_shipment_path(shipment) %></td>
+    <td><%= link_to 'Destroy', shipment, :confirm => 'Are you sure?', :method => :delete %></td>
+-->
+  </tr>
+<% end %>
+</table>
+
+<br />
+<!--
+<%= link_to 'New Shipment', new_shipment_path %>
+-->

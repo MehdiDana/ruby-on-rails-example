@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Type:</b>
+  <%= @vehicle.type %>
+</p>
+
+<p>
+  <b>Volume:</b>
+  <%= @vehicle.volume %>
+</p>
+
+<p>
+  <b>Weight capacity:</b>
+  <%= @vehicle.weight_capacity %>
+</p>
+
+<!--
+<%= link_to 'Edit', edit_vehicle_path(@vehicle) %> |
+-->
+<%= link_to 'Back', vehicles_path %>

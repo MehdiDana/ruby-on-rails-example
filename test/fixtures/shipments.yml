@@ -1,0 +1,27 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  state: MyString
+  origin: MyText
+  destination: MyText
+  description: MyText
+  weight: 1.5
+  volume: 1.5
+  slot_start_at: 2011-03-24 19:19:58
+  slot_end_at: 2011-03-24 19:19:58
+  driver: 
+  vehicle: 
+  contract: 
+
+two:
+  state: MyString
+  origin: MyText
+  destination: MyText
+  description: MyText
+  weight: 1.5
+  volume: 1.5
+  slot_start_at: 2011-03-24 19:19:58
+  slot_end_at: 2011-03-24 19:19:58
+  driver: 
+  vehicle: 
+  contract: 

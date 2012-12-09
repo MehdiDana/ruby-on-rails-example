@@ -1,0 +1,32 @@
+<h1 class="head1">Listing vehicles</h1>
+
+<table>
+  <tr>
+    <th>Type</th>
+    <th>Volume</th>
+    <th>Weight capacity</th>
+    <th></th>
+<!--
+    <th></th>
+    <th></th>
+-->
+  </tr>
+
+<% @vehicles.each do |vehicle| %>
+  <tr>
+    <td><%= vehicle.type %></td>
+    <td><%= vehicle.volume %></td>
+    <td><%= vehicle.weight_capacity %></td>
+    <td><%= link_to 'Show', vehicle_path(vehicle) %></td>
+<!--
+    <td><%= link_to 'Edit', edit_vehicle_path(vehicle) %></td>
+    <td><%= link_to 'Destroy', vehicle_path(vehicle), :confirm => 'Are you sure?', :method => :delete %></td>
+-->
+  </tr>
+<% end %>
+</table>
+
+<br />
+<!--
+<%= link_to 'New Vehicle', new_vehicle_path %>
+-->

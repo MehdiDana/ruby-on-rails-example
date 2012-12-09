@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  state: MyString
+  price: 1.5
+  start_at: 2011-03-24 19:00:31
+  end_at: 2011-03-24 19:00:31
+  policy: MyString
+  reason: MyText
+  customer: 
+
+two:
+  state: MyString
+  price: 1.5
+  start_at: 2011-03-24 19:00:31
+  end_at: 2011-03-24 19:00:31
+  policy: MyString
+  reason: MyText
+  customer: 

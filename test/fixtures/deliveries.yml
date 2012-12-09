@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  shipped_at: 2011-03-24 19:22:54
+  shipment: 
+
+two:
+  shipped_at: 2011-03-24 19:22:54
+  shipment: 

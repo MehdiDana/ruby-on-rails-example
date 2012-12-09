@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  amout: 1.5
+  invoice: 
+
+two:
+  amout: 1.5
+  invoice: 

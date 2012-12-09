@@ -1,0 +1,61 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>State:</b>
+  <%= @shipment.state %>
+</p>
+
+<p>
+  <b>Origin:</b>
+  <%= @shipment.origin %>
+</p>
+
+<p>
+  <b>Destination:</b>
+  <%= @shipment.destination %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @shipment.description %>
+</p>
+
+<p>
+  <b>Weight:</b>
+  <%= @shipment.weight %>
+</p>
+
+<p>
+  <b>Volume:</b>
+  <%= @shipment.volume %>
+</p>
+
+<p>
+  <b>Slot start at:</b>
+  <%= @shipment.slot_start_at %>
+</p>
+
+<p>
+  <b>Slot end at:</b>
+  <%= @shipment.slot_end_at %>
+</p>
+
+<p>
+  <b>Driver:</b>
+  <%= @shipment.driver.name %>
+</p>
+
+<p>
+  <b>Vehicle:</b>
+  <%= @shipment.vehicle.type %>
+</p>
+
+<p>
+  <b>Contract:</b>
+  <%= @shipment.contract.id %>
+</p>
+
+<!--
+<%= link_to 'Edit', edit_shipment_path(@shipment) %> |
+-->
+<%= link_to 'Back', shipments_path %>
